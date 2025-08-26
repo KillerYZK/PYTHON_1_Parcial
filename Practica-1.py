@@ -146,5 +146,3 @@ palabreas mas o palabreas menos
 Inicia el programa si lo ejecutas con directamente
 """
 
-if __name__ == "__main__":
-    main()
