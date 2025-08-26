@@ -1,3 +1,9 @@
+"""Practica 1: Cajero Automático    
+Isaac Echeverría Álvarez
+3a TPO
+"""
+
+#definir funciones que utlizara el programa
 def mostrar_menu():
     print("------------------------------------")
     print("|Bienvenido a su cajero automatico |")
@@ -7,7 +13,7 @@ def mostrar_menu():
     print("|3.Depositar efectivo              |")
     print("|4.Salir                           |")
     print("------------------------------------")
-
+#funcion para depositar dinero
 def depositar(saldo, deposito):
     print("-------------------------------------")
     print("|         Depositar efectivo        |")   
@@ -25,7 +31,7 @@ def depositar(saldo, deposito):
     except ValueError:
         print("Por favor, ingrese una cantidad válida")
     return saldo
-
+#funcion para sacar dinero
 def saldo_restante(saldo, retirar):
     print("--------------------------------------------")
     print("|         Retirar efectivo                 |")
@@ -50,6 +56,7 @@ def saldo_restante(saldo, retirar):
     except ValueError:
         print("Por favor, ingrese una cantidad válida")
     return saldo
+
 def main():
     # Pantalla de bienvenida
     print("------------------------------------")
@@ -101,7 +108,13 @@ def main():
                 print("|Elije algo valido no te pases.    |")
                 print("------------------------------------")
                 continue
-
+            """
+            Yo se que para esto se usa el if y el elif
+            pero seamos honestos maestra,
+            se ve bien feo con puros if (almenos a mi no me gusta mucho)
+            entonces haciendo caso a lo que me dijo la maestra
+            use el match B)
+            """
             match opcion:
                 case 1:
                     print("------------------------------------")
@@ -119,8 +132,19 @@ def main():
                     print("------------------------------------")
                     break
         except ValueError:
-            print("------------------------------------")
+            print("---------------------------------------")
             print("|Por favor, introduce un numero valido|")
-            print("------------------------------------")
+            print("---------------------------------------")
 
+"""
+honestamente me puse a medio investigar y encontre esto que esta abajito
+Me preguntara y para que fregados es
+Bueno esto sirve para actuar como punto de entrada del programa
+y evitar que ciertas partes del código se ejecuten cuando el archivo es importado como módulo en
+otro archivo.
+palabreas mas o palabreas menos
+Inicia el programa si lo ejecutas con directamente
+"""
+
+if __name__ == "__main__":
     main()
