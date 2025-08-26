@@ -1,2 +1,1 @@
-Codigos de practica de la materia de POO
-ISAAC ECHEVERRIA ALVAREZ
+Codigos de practica de la materia de POO ISAAC ECHEVERRIA ALVAREZ
