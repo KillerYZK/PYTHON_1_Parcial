@@ -11,6 +11,9 @@ cadena2 = "SoS"
 print("casefold", cadena2.casefold())
 print("center", cadena2.center(10, '*'))
 
-menus = ["Menu ATM", "1. Ingresar dinero", "2. Retirar dinero", "3. Consultar saldo"]
+menus = ["Menu ATM", "1. Ingresar dinero", "2. Retirar dinero", "3. Consultar saldo", "4. Salir"]
 for menu in menus:
     print(menu.center(30, '-'))
+
+cadena3 = "Don quixote de la mancha"
+print("count", cadena3.count("o",1,30))
