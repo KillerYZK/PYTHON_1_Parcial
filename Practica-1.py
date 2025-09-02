@@ -1,4 +1,5 @@
-"""Practica 1: Cajero Automático    
+"""
+Practica 1: Cajero Automático    
 Isaac Echeverría Álvarez
 3a TPO
 """
@@ -135,7 +136,7 @@ def main():
             print("---------------------------------------")
             print("|Por favor, introduce un numero valido|")
             print("---------------------------------------")
-
+       
 """
 honestamente me puse a medio investigar y encontre esto que esta abajito
 Me preguntara y para que fregados es
@@ -145,4 +146,5 @@ otro archivo.
 palabreas mas o palabreas menos
 Inicia el programa si lo ejecutas con directamente
 """
-
+if __name__ == "__main__":
+    main()
